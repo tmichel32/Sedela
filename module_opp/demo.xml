@@ -1,0 +1,17 @@
+<openerp>
+    <data>
+      <!-- <record model="opportunity.rearranger" id="tache0">
+           <field name="name">Rearranger 1</field>
+           <field name="description">rearrange's descriptionCan have multiple lines
+           </field>
+       </record>
+       <record model="opportunity.rearranger" id="tache1">
+           <field name="name">Rearrange 1</field>
+           <field name="description">Rearrange 2's description</field>
+       </record>
+       <record model="opportunity.rearranger" id="tache2">
+           <field name="name">Rearrange 2</field>
+           <field name="description">Rearrange 2's description</field>
+       </record> -->
+    </data>
+</openerp>

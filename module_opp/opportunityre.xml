@@ -1,0 +1,40 @@
+  <openerp>
+    <data>
+
+      <!-- Wizard code -->
+
+      <record model="ir.ui.view" id="wizard_form_view">
+           <field name="name">wizard.form</field>
+           <field name="model">opportunity.wizard</field>
+           <field name="arch" type="xml">
+               <form string="Add Attendees">
+                   <group>
+                       <p>Réarrangment des opportunités</p>
+                   </group>
+                   <footer>
+                    <button name="rearranger" type="object"
+                             string="Rearranger" class="oe_highlight"/>
+                    or
+                    <button special="cancel" string="Cancel"/>
+                   </footer>
+               </form>
+           </field>
+       </record>
+
+       <act_window id="launch_session_wizard"
+                   name="Changer étape en gagner"
+                   src_model="opportunity.wizard"
+                   res_model="opportunity.wizard"
+                   view_mode="form"
+                   target="new"
+                   key2="client_action_multi"/>
+
+
+        <menuitem id="opportunity_menu" name="Réarrangement Opportunités"
+                  parent="base.menu_base_partner"/>
+
+        <menuitem id="rearranger_menu" name="Action" parent="opportunity_menu"
+                  action="launch_session_wizard"/>
+
+    </data>
+</openerp>
